@@ -1,4 +1,19 @@
+/* components */
+@import url(/src/css/Header.scss);
+@import url(/src/css/Toper.scss);
+@import url(/src/css/Paragraph.scss);
+@import url(/src/css/Loading.scss);
+/* pages */
+@import url(/src/css/Home.scss);
+@import url(/src/css/Apropos.scss);
+
 .App {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +50,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

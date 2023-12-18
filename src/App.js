@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
+import Header from './components/Header';
+import Toper from './components/Toper';
+import Home from "./pages/Home";
+import Apropos from "./pages/Apropos";
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="bodyContainer">
+        <Toper mail="contact@prettyprint.fdr" phone="+336 000 000 00" horaires="Lundi - Vendredi / 9h - 17h" facebook="/" instagram="/" tiktok="/" />
+        <Header />
+        <Routes>
+          {/* <Route path="/location/:locationId" element={<Location />} /> */}
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<Apropos />} />
+          {/* <Route path="*" element={<Lost />} /> */}
+        </Routes>
+      </div>
+      {/* <Footer /> */}
+    </>
   );
 }
 

@@ -6,6 +6,7 @@
 /* pages */
 @import url(/src/css/Home.scss);
 @import url(/src/css/Apropos.scss);
+@import url(/src/css/RegLog.scss);
 
 .App {
   width: 100%;

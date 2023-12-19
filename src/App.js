@@ -5,6 +5,10 @@ import Toper from './components/Toper';
 import Loading from './components/Loading';
 import Home from "./pages/Home";
 import Apropos from "./pages/Apropos";
+import Products from "./pages/Products";
+import Register from "./pages/Register";
+import Login from "./pages/Login";
+import Disconnect from "./pages/Disconnect";
 
 
 function App() {
@@ -18,8 +22,11 @@ function App() {
           {/* <Route path="/location/:locationId" element={<Location />} /> */}
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<Apropos />} />
-          <Route path="/products" element={<Loading />} />
+          <Route path="/products" element={<Products />} />
           <Route path="/contact" element={<Loading />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/disconnect" element={<Disconnect />} />
           {/* <Route path="*" element={<Lost />} /> */}
         </Routes>
       </div>

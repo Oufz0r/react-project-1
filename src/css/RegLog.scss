@@ -1,0 +1,52 @@
+#RegLog {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+    h2 {
+        margin-bottom: 30px;
+    }
+
+    a {
+        margin-top: 10px;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+
+        label {
+            width: 100%;
+            font-size: 14px;
+        }
+
+        label:not(:first-of-type) {
+            margin-top: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 6px;
+        }
+
+        button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 20px;
+            font-weight: 600;
+            background-color: rgb(57, 98, 61);
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    }
+}
